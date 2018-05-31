@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bubbler+One|Sacramento|Josefin+Slab" rel="stylesheet">
+<title> spring final project </title>
+</head>
+<body style="background-color: #FFFFFF">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://josepho1.github.io/homepage.html">Home</a>
+  <a href="https://josepho1.github.io/aboutme.html">About Me </a>
+  <a href="josepho1.github.io/finalproject.html">final project</a>
+  
+</div>
+
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    <h2 style="font-size:200%;font-family: 'Amatic SC', cursive;"> Summary of my project:</h2>
+    <p style="font-size:140%;font-family: 'Bubbler One', sans-serif;"> The project for my AP Computer Science  class was to create an object in java. I decided in the fall to create a project of an object and the object I choose was Football because I am really into watching and playing the sport. The traits of the football class are the following age, yearsnfl, rushingyards, catchingyards, name, lastname, jersey, fans, position, team, vetorrookie, and salary. The Football class implements myPlayer. The interface myPlayer only has one method and that method is success() which when is accessed will print the following statement “The potential for success is high”.  Football has one player and Football has a child object which is myPlayer. In myPlayer the user can submit the name of the players agent and as well whether the player is good or bad. The average yards per game is given as a random. I tested the methods using a driver class for Football. I made it so the Fantasy Roster is provided and shows the cuts made on the Roster and all organizes it based on their salary from least to greatest. 
+</p>
+    <center><img src="http://imagizer.imageshack.us/a/img923/9291/e3Otut.png" alt="profile" style="width:400px;height:500px;"></center>
+    <center><figcaption>UML diagram</figcaption></center>
+
+    <center><table>
+<tr>
+<th><img src="http://imagizer.imageshack.us/a/img924/8566/A2BiCe.png" style="width:350px;height:300px;"></th>
+<th><img src="https://imageshack.com/a/img924/5283/2lUSUB.png"
+style="width:350px;height:300px;"></th>
+<th><img src="https://imageshack.com/a/img924/4576/2AF8d8.png"
+style="width:350px;height:300px;"></th>
+</tr>
+        </center>
+    <h3 style="font-size:200%;font-family: 'Amatic SC', cursive;"> <a href="https://docs.google.com/document/d/1c8sKjS9FrT1aALM-L4Cx5RXpa41Zv6qR-TsSVN8OGNM/edit?usp=sharing">My final code</a></h3>
+    </body>
+</html>
